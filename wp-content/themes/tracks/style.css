@@ -854,7 +854,7 @@ a img {
   }
 
   .excerpt-container {
-    background: white;
+    background: /*white*/;
     padding: 0 6.2%;
   }
 
@@ -877,6 +877,7 @@ a img {
   .excerpt-container {
     width: 50%;
     padding: 0 5.55%;
+    display: inline-block;
   }
 
   .excerpt {

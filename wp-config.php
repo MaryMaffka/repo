@@ -22,7 +22,7 @@ define('DB_NAME', 'news');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'bitnami');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -50,8 +50,8 @@ define('AUTH_SALT',        'put your unique phrase here');
 define('SECURE_AUTH_SALT', 'put your unique phrase here');
 define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
-define('WP_HOME', 'http://postolatyeva.repo.dev');
-define('WP_SITEURL', 'http://postolatyeva.repo.dev');
+define('WP_HOME', 'http://localhost/repo/');
+define('WP_SITEURL', 'http://localhost/repo/');
 /**#@-*/
 
 /**
