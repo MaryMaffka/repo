@@ -31,6 +31,7 @@ if( is_home() ) { ?>
                 </article>
             </div>
         </div>
+
         <div class="excerpt-container">
             <div class="excerpt-image">
                 <img src="http://xsport.ua/upload/news-photos/Tennis/5ab-Rinat-Akhmetov.jpeg" alt="" class="" id="">
@@ -69,17 +70,7 @@ if( is_home() ) { ?>
             <img src="http://atn.ua/sites/default/files/700.jpg" alt="" class="" id="">
         </div>
         <div class="entry-meta">
-            <span class="date"><?php echo get_the_date('F j'); ?> / </span>
-            <span class="author"><?php the_author_posts_link(); ?> / </span>
-                <span class="category">
-                    <?php
-                    $category = get_the_category();
-                    $category_link = get_category_link( $category[0]->term_id );
-                    $category_name = $category[0]->cat_name;
-                    $html = "<a href='" . $category_link . "'>" . $category_name . "</a>";
-                    echo $html;
-                    ?>
-                </span>
+            <span class="date"><?php echo get_the_date('F j'); ?></span>
         </div>
         <div class='entry-header'>
             <h1 class='entry-title'><?php the_title(); ?></h1>
@@ -88,6 +79,7 @@ if( is_home() ) { ?>
             <div class="entry-content">
                 <article>
                     <?php the_content(); ?>
+					
                     <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Страницы:','tracks'), 'after' => '</p>', ) ); ?>
                 </article>
             </div>
@@ -100,25 +92,16 @@ if( is_home() ) { ?>
             <img src="http://xsport.ua/upload/news-photos/Tennis/5ab-Rinat-Akhmetov.jpeg" alt="" class="" id="">
         </div>
         <div class="entry-meta">
-            <span class="date"><?php echo get_the_date('F j'); ?> / </span>
-            <span class="author"><?php the_author_posts_link(); ?> / </span>
-                <span class="category">
-                    <?php
-                    $category = get_the_category();
-                    $category_link = get_category_link( $category[0]->term_id );
-                    $category_name = $category[0]->cat_name;
-                    $html = "<a href='" . $category_link . "'>" . $category_name . "</a>";
-                    echo $html;
-                    ?>
-                </span>
-        </div>
+            <span class="date"><?php echo get_the_date('F j'); ?></span>
+		</div>
         <div class='entry-header'>
             <h1 class='entry-title'><?php the_title(); ?></h1>
         </div>
         <div class="entry-container">
             <div class="entry-content">
                 <article>
-                    <?php the_content(); ?>
+		
+                    <?php echo get_field('second_post');?>
                     <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Страницы:','tracks'), 'after' => '</p>', ) ); ?>
                 </article>
             </div>

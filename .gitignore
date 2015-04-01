@@ -1,0 +1,8 @@
+.htaccess
+wp-content/uploads/*
+wp-config.php
+sitemap.xml
+sitemap.xml.gz
+.idea
+.git-ftp-ignore
+/nbproject/private/
